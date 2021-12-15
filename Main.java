@@ -52,58 +52,59 @@ final class Main {
     * @param args No args will be used
     */
     public static void main(final String[] args) {
-        final HaokaiStack aStack1 = new HaokaiStack(FOUR, ZERO, TWOOO);
-        final Scanner userInput = new Scanner(System.in);
+        final Vehicle aStack1 = new Vehicle(FOUR, ZERO, TWOOO);
+        final Scanner userInput1 = new Scanner(System.in);
 
         System.out.print(
             "Please enter the License plate number of first car: "
         );
-        final String licensePlateNumber = userInput.nextLine();
+        final String licensePlateNumber = userInput1.nextLine();
         System.out.print(
             "Please enter the Colour of first car: "
         );
-        final String color = userInput.nextLine();
+        final String color = userInput1.nextLine();
         aStack1.push(licensePlateNumber, color);
         aStack1.showStack();
 
         System.out.print(
             "Please enter the Accelerate of first car: "
         );
-        final int accelerateNumber = userInput.nextInt();
+        final int accelerateNumber = userInput1.nextInt();
         aStack1.accelerate(accelerateNumber);
         aStack1.showStack();
 
         System.out.print(
             "Please enter the Brake of first car: "
         );
-        final int brakeNumber = userInput.nextInt();
+        final int brakeNumber = userInput1.nextInt();
         aStack1.brake(brakeNumber);
         aStack1.showStack();
 
-        final HaokaiStack aStack2 = new HaokaiStack(TWO, ZERO, FIVEOO);
+        final Vehicle aStack2 = new Vehicle(TWO, ZERO, FIVEOO);
+        final Scanner userInput2 = new Scanner(System.in);
 
         System.out.print(
             "Please enter the License plate number of second car: "
         );
-        final String licensePlateNumber2 = userInput.nextLine();
+        final String licensePlateNumber2 = userInput2.nextLine();
         System.out.print(
             "Please enter the Colour of second car: "
         );
-        final String color2 = userInput.nextLine();
+        final String color2 = userInput2.nextLine();
         aStack2.push(licensePlateNumber2, color2);
         aStack2.showStack();
 
         System.out.print(
             "Please enter the Accelerate of second car: "
         );
-        final int accelerateNumber2 = userInput.nextInt();
+        final int accelerateNumber2 = userInput2.nextInt();
         aStack2.accelerate(accelerateNumber2);
         aStack2.showStack();
 
         System.out.print(
             "Please enter the Brake of second car: "
         );
-        final int brakeNumber2 = userInput.nextInt();
+        final int brakeNumber2 = userInput2.nextInt();
         aStack2.brake(brakeNumber2);
         aStack2.showStack();
 
