@@ -39,7 +39,9 @@ public class HaokaiStack {
     * @param speedInput speed
     * @param maxSpeedInput maxspeed
     */
-    public HaokaiStack(int doorNumberInput, int speedInput, int maxSpeedInput) {
+    public HaokaiStack(final int doorNumberInput,
+                       final int speedInput,
+                       final int maxSpeedInput) {
         this.doorNumber = doorNumberInput;
         this.speed = speedInput;
         this.maxSpeed = maxSpeedInput;
